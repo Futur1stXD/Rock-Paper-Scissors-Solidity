@@ -36,15 +36,15 @@ def get_winner(player_choice, computer_choice):
     if player_choice == "rock" and computer_choice == "scissors":
         winner = "player"
         client.increase_wins()
-        client.add_winning_price(0.001)
+        client.add_winning_price(0.002)
     if player_choice == "scissors" and computer_choice == "paper":
         winner = "player"
         client.increase_wins()
-        client.add_winning_price(0.001)
+        client.add_winning_price(0.002)
     if player_choice == "paper" and computer_choice == "rock":
         winner = "player"
         client.increase_wins()
-        client.add_winning_price(0.001)
+        client.add_winning_price(0.002)
 
     if winner == 'computer':
         client.countWins -= 1
